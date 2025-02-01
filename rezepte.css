@@ -72,7 +72,7 @@ img {
     display: flex;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1550px) {
 
     .suppen, .brote, .sonstiges {
         display: grid;
@@ -118,7 +118,51 @@ img {
 
 }
 
-@media (max-width: 767px) {
+@media (min-width: 970px) and (max-width: 1550px) {
+    .suppen, .brote, .sonstiges {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 70px;
+        justify-content: center;
+        align-items: center;
+        }
+    
+        main {
+            margin: 40px;
+            padding: 10px;
+            background-color: rgb(248, 234, 214);
+        }
+    
+        nav {
+            height: 300px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: 300px;
+            background-color: rgb(221, 220, 220);
+            margin: 40px;
+            border: solid 1px black;
+            font-size: 20px;
+        }
+
+        h1 {
+            border: solid 2px rgb(255, 255, 255);
+            margin: 0 40px;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 50px;
+        }    
+    
+        h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-top: 30px;
+            border-top: solid 1px black;
+            font-size: 40px;
+        }
+}
+
+@media (max-width: 970px) {
     .suppen, .brote, .sonstiges {
         margin-bottom: 70px;
         justify-content: center;
