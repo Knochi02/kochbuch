@@ -14,7 +14,7 @@ header {
     margin: 0;
     padding: 10px;
     color: #ffffff;
-    background-color: hsl(34, 75%, 55%);
+    background-color: hsl(39, 76%, 75%);
     text-align: center;
 }
 
@@ -95,7 +95,7 @@ img {
             overflow-x: hidden;
             width: 300px;
             background-color: rgb(221, 220, 220);
-            margin: 50px;
+            margin: 40px;
             border: solid 1px black;
             font-size: 20px;
         }
@@ -115,6 +115,7 @@ img {
             border-top: solid 1px black;
             font-size: 40px;
         }
+
 }
 
 @media (max-width: 767px) {
@@ -156,4 +157,5 @@ img {
             border-top: solid 1px black;
             font-size: 40px;
         }
+    
 }

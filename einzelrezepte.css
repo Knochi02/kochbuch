@@ -13,7 +13,7 @@ header {
     margin: 0;
     padding: 10px;
     color: #ffffff;
-    background-color: hsl(34, 75%, 55%);
+    background-color: hsl(39, 75%, 75%);
     text-align: center;
 }
 
@@ -87,6 +87,10 @@ h3 {
 .zubereitung li {
     padding: 10px 0;
     line-height: 1.3;
+}
+
+.zubereitung li a {
+    color: blue;
 }
 
 
