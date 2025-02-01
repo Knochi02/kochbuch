@@ -1,9 +1,10 @@
-<!--breakpoints handy ansicht
-    Portionen mit JS 
-    evt. Kochmodus
---> 
 
 
+
+
+<!-- - breakpoints machen für handy und pc angepasst, dann grid für gleichen abstand zu allen seiten
+     - JavaScript Portionen input umrechnen und ergebnis ausgeben
+     - evt. Kochmodus nachschauen -->
 
 
 <!Doctype html>
@@ -11,8 +12,7 @@
 <head>
     <title>Rezepte</title>
     <link rel="stylesheet" type="text/css" href="rezepte.css">
-    <meta charset="utf-8" lang="de" name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta charset="utf-8" lang="de">
 </head>
 <body>
     <header><h1>Rezeptbuch</h1></header>
@@ -32,11 +32,11 @@
                 </ul><br><br>
             <li><a href="#sonstiges">Sonstiges:</a></li><br>
                 <ul>
-                <li><a href="#risotto">Risotto</a></li>
+                <li><a href="#tomatenrisotto">Risotto</a></li>
                 </ul>
         </ul>
     </nav>
-    <main>
+    <main class="rezepte">
         <h2>Suppen</h2><br>
         <div class="suppen" id="suppen">
                 <div class="flexbox a" id="brokkolisuppe">
@@ -174,7 +174,7 @@
                 <div class="flexbox c" id="tomatenrisotto">
                     <a href="tomatenrisotto.html">
                     <h3>Tomatenrisotto</h3>
-                    <img src="bilder/tomatenrisotto.webp">
+                    <img src="bilder/tomatenrisotto.jpg">
                     <div class="beschreibung">
                         <ul>
                             <li>Arbeitszeit:</li>
@@ -195,3 +195,8 @@
     </main>
 </body>
 </html>
+
+
+
+
+
