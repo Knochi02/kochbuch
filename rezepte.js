@@ -20,3 +20,44 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Kochmodus aktivieren/deaktivieren
+let wakeLock = null;
+
+async function enableKochmodus() {
+    try {
+        wakeLock = await navigator.wakeLock.request("screen");
+        document.getElementById("kochmodusToggle").classList.add("active");
+    } catch (err) {
+        console.error("Fehler beim Aktivieren des Kochmodus:", err);
+    }
+}
+
+async function disableKochmodus() {
+    if (wakeLock) {
+        await wakeLock.release();
+        wakeLock = null;
+        document.getElementById("kochmodusToggle").classList.remove("active");
+    }
+}
+
+function toggleKochmodus() {
+    if (wakeLock) {
+        disableKochmodus();
+    } else {
+        enableKochmodus();
+    }
+}
+
+// Event Listener für Sichtbarkeitsänderungen
+// Falls der Wake Lock unterbrochen wird, erneut aktivieren
+document.addEventListener("visibilitychange", async () => {
+    if (wakeLock !== null && document.visibilityState === "visible") {
+        await enableKochmodus();
+    }
+});
+
+function toggleMenu() {
+    const nav = document.getElementById('nav-links');
+    nav.classList.toggle('hidden');
+}

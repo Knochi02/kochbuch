@@ -93,6 +93,47 @@ h3 {
     color: blue;
 }
 
+.kochmodus-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(226, 226, 226);
+    padding: 20px 30px;
+    width: fit-content;
+    height: 30px; 
+    margin: 50px 50px 0 50px;
+}
+
+.kochmodus-toggle {
+    width: 50px;
+    height: 25px;
+    background-color: red;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.kochmodus-toggle .toggle-indicator {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: left 0.3s;
+}
+
+.kochmodus-toggle.active {
+    background-color: green;
+}
+
+.kochmodus-toggle.active .toggle-indicator {
+    left: 25px;
+}
+
 
 
 @media (max-width: 767px) {
@@ -109,6 +150,7 @@ h3 {
         margin-bottom: 50px;
        
     }
+    
 
     .zutaten {
         background-color: rgb(226, 226, 226);
@@ -162,4 +204,4 @@ h3 {
     h1 {
         font-size: 50px;
     }
-    }
+}

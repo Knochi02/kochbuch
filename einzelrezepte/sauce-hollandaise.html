@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sauce Hollandaise</title>
+    <link rel="stylesheet" type="text/css" href="../einzelrezepte.css">
+    <meta charset="utf-8" lang="de" name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../rezepte.js" defer></script>
+</head>
+<body>
+    <header><h1>Sauce Hollandaise</h1></header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Zurück</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="flexbox a">
+            <img src="../bilder/sauce-hollandaise.jpg">
+            <div class="portionen">
+                <form>
+                    <label for="portionen">Portionen:</label>
+                    <input type="number" id="portionen" name="portionen" min="1" max="10" value="2">
+                    <input type="submit" value="Berechnen">
+                </form>
+                <div class="zutaten">
+                    <h3>Zutaten:</h3>
+                    <div class="flexbox b">
+                        <ul class="flexitem c">
+                            <li>0.5</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>1</li>
+                            <li>100 ml</li>
+                            <li>100 ml</li>
+                            <li><span data-count>2</span> ml</li>
+                            <li><span data-weight>120</span> g</li>
+                            <li><span data-count>1</span> Prisen</li>
+                            <li><span data-count>2</span> Prisen</li>
+                            <li><span data-count>1</span> Prisen</li>
+                            <li><span data-count>0.25</span></li>
+                            <li><span data-count>3</span> Tropfen</li>
+                        </ul>    
+                        <ul class="flexitem d">
+                            <li>Schalotten</li>
+                            <li>Nelken (optional)</li>
+                            <li>Wacholderbeeren (optional)</li>
+                            <li>Lorbeerblatt</li>
+                            <li>Wasser</li>
+                            <li>Weißwein</li>
+                            <li>Eier</li>
+                            <li>Butter</li>
+                            <li>Zucker</li>
+                            <li>Salz</li>
+                            <li>Weißer Pfeffer</li> 
+                            <li>Zitronen</li>
+                            <li>Worcester Sauce</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="kochmodus-container">
+                <span>Kochmodus:</span>
+                <div id="kochmodusToggle" class="kochmodus-toggle" onclick="toggleKochmodus()">
+                    <div class="toggle-indicator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="zubereitung">
+            <h3>Zubereitung:</h3>
+            <ol>
+                <li><strong>0.5 Schalotten</strong>,<strong> 3 Nelken</strong>,<strong> 4 Wacholderbeeren</strong>,<strong> 1 Lorbeerblatt</strong>,<strong> 100 ml Wasser</strong> und <strong>100 ml Weißwein</strong> in einem Topf auf mittlerer Hitze auf die Hälfte Reduzieren lassen.</li>
+                <li>Die <strong>Weißweinreduktion</strong> durch ein feines Sieb geben und die <strong>Schalotten</strong>, <strong>Nelken</strong>, <strong>Wacholderbeeren</strong> und <strong>Lorbeerblatt</strong> entfernen.</li>
+                <li><strong><span data-weight>120</span> g Butter</strong> in einem kleinen Topf schmelzen lassen.</li>
+                <li>Einen kleinen Topf mit wenig Wasser (ca. 200 ml) aufstellen und nur leicht sieden lassen.</li>
+                <li>In einer Metallschüssel <strong><span data-count>2</span> Eigelb</strong> mit <strong><span data-volume>2</span> EL Weißweinreduktion</strong> mit einem Schneebesen vermengen.</li>
+                <li>Die Schüssel nun über den Topf geben und mit gleichmäßigen Bewegungen im Handgelenk die Eiermasse rühren, bis sie immer heller, cremiger und luftiger wird. Die Hollandaise dabei immer mal wieder vom Wasserbad nehmen und kontrollieren, dass das Wasser im Topf nicht wallend kocht.</li>
+                <li>Die Soße ist fertig, wenn der Schneebesen tiefe Fugen beim Durchgleiten hinterlässt.</li>
+                <li>Die Soße vom Wasserbad nehmen und nun nach und nach die <strong>flüssige Butter</strong> unterrühren.</li>
+                <li>Mit <strong><span data-count>1</span> Prise Zucker</strong>, <strong><span data-count>2</span> Prisen Salz</strong>, <strong><span data-count>1</span> Prise weißem Pfeffer</strong>, dem Saft von <strong><span data-count>0.25</span> Zitronen</strong> und <strong><span data-count>3</span> Tropfen Worcester Sauce</strong> abschmecken.</li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>
+
