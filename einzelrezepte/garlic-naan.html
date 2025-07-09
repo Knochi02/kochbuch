@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Garlic Naan</title>
+    <link rel="stylesheet" type="text/css" href="../einzelrezepte.css">
+    <meta charset="utf-8" lang="de" name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../rezepte.js" defer></script>
+</head>
+<body>
+    <header><h1>Garlic Naan</h1></header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Zurück</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="flexbox a">
+            <img src="../bilder/garlic-naan.jpg" alt="Garlic Naan">
+            <div class="portionen">
+                <form>
+                    <label for="portionen">Portionen:</label>
+                    <input type="number" id="portionen" name="portionen" min="1" max="10" value="4">
+                    <input type="submit" value="Berechnen">
+                </form>
+                <div class="zutaten">
+                    <h3>Zutaten:</h3>
+                    <div class="flexbox b">
+                        <ul class="flexitem c">
+                            <li><span data-count>2</span> TL</li>
+                            <li><span data-count>1</span> TL</li>
+                            <li><span data-volume>60</span> ml</li>
+                            <li><span data-volume>60</span> ml</li>
+                            <li><span data-volume>40</span> ml</li>
+                            <li><span data-weight>280</span> g</li>
+                            <li><span data-count>1</span> TL</li>
+                        </ul>    
+                        <ul class="flexitem d">
+                            <li>Trockenhefe</li>
+                            <li>Zucker</li>
+                            <li>lauwarmes Wasser</li>
+                            <li>Naturjoghurt</li>
+                            <li>neutrales Öl (davon ca. 20 ml Knoblauchöl)</li>
+                            <li>Weizenmehl</li>
+                            <li>Salz</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="kochmodus-container">
+                <span>Kochmodus:</span>
+                <div id="kochmodusToggle" class="kochmodus-toggle" onclick="toggleKochmodus()">
+                    <div class="toggle-indicator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="zubereitung">
+            <h3>Zubereitung:</h3>
+            <ol>
+                <li><strong><span data-count>2</span> TL Trockenhefe</strong>, <strong><span data-count>1</span> TL Zucker</strong> und <strong><span data-volume>60</span> ml lauwarmes Wasser</strong> verrühren und <strong>10 Minuten</strong> stehen lassen.</li>
+                <li><strong><span data-volume>60</span> ml Naturjoghurt</strong> und <strong><span data-volume>40</span> ml Öl</strong> (davon ca. 20 ml Knoblauchöl) hinzufügen und unterrühren.</li>
+                <li><strong><span data-weight>280</span> g Mehl</strong> mit <strong><span data-count>1</span> TL Salz</strong> vermengen. In der Mitte eine Kuhle formen.</li>
+                <li>Flüssige Zutaten nach und nach in die Mehlkuhle geben und alles kräftig mindestens <strong>5 Minuten</strong> verkneten.</li>
+                <li>Teig in eine bemehlte Schüssel legen, luftdicht abdecken und an einem warmen Ort gehen lassen, bis sich das Volumen verdoppelt hat.</li>
+                <li>Teig auf bemehlter Arbeitsfläche zu einer Wurst rollen, in ca. <strong>80 g</strong> große Stücke teilen und zu Fladen ausrollen.</li>
+                <li>Pfanne mit wenig Öl bepinseln, sehr heiß werden lassen und die Fladen darin je <strong>1–2 Minuten</strong> pro Seite knusprig ausbacken.</li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>

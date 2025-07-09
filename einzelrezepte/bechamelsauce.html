@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Béchamelsauce</title>
+    <link rel="stylesheet" type="text/css" href="../einzelrezepte.css">
+    <meta charset="utf-8" lang="de" name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../rezepte.js" defer></script>
+</head>
+<body>
+    <header><h1>Béchamelsauce</h1></header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Zurück</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="flexbox a">
+            <img src="../bilder/bechamelsauce.jpg">
+            <div class="portionen">
+                <form>
+                    <label for="portionen">Portionen:</label>
+                    <input type="number" id="portionen" name="portionen" min="1" max="10" value="4">
+                    <input type="submit" value="Berechnen">
+                </form>
+                <div class="zutaten">
+                    <h3>Zutaten:</h3>
+                    <div class="flexbox b">
+                        <ul class="flexitem c">
+                            <li><span data-weight>50</span> g</li>
+                            <li><span data-weight>30</span> g</li>
+                            <li><span data-volume>500</span> ml</li>
+                            <li><span data-count>1</span></li>
+                            <li><span data-count>3</span></li>
+                            <li><span data-count>1</span></li>
+                            <li>etwas</li>
+                            <li>etwas</li>
+                        </ul>    
+                        <ul class="flexitem d">
+                            <li>Butter</li>
+                            <li>Mehl</li>
+                            <li>Milch</li>
+                            <li>Zwiebeln</li>
+                            <li>Nelken</li>
+                            <li>Lorbeerblätter</li>
+                            <li>Salz</li>
+                            <li>Pfeffer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="kochmodus-container">
+                <span>Kochmodus:</span>
+                <div id="kochmodusToggle" class="kochmodus-toggle" onclick="toggleKochmodus()">
+                    <div class="toggle-indicator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="zubereitung">
+            <h3>Zubereitung:</h3>
+            <ol>
+                <li><strong><span data-weight>50</span> g Butter</strong> in einem Topf schmelzen lassen.</li>
+                <li><strong><span data-weight>30</span> g Mehl</strong> hinzufügen und unter Rühren anschwitzen, bis eine Mehlschwitze entsteht.</li>
+                <li><strong><span data-volume>500</span> ml Milch</strong> langsam unter Rühren hinzufügen und aufkochen lassen. Die Soße sollte beim Erhitzen sich verdicken.</li>
+                <li><strong><span data-count>1</span> Zwiebeln</strong> schälen, mit <strong><span data-count>3</span> Nelken</strong> und <strong><span data-count>1</span> Lorbeerblättern</strong> spicken und in die Soße geben.</li>
+                <li>Die Soße bei niedriger Hitze etwa <strong>10 Minuten</strong> köcheln lassen, dabei gelegentlich umrühren.</li>
+                <li>Die Zwiebeln, Nelken und Lorbeerblätter entfernen.</li>
+                <li>Mit <strong>Salz</strong> und <strong>Pfeffer</strong> abschmecken.</li>
+            </ol>
+            <p>Mit etwas Käse wird die Béchamelsauce zu einer Sauce Mornay, mit etwas Senf kann eine Senfsauce zubereitet werden.</p>
+        </div>
+    </main>
+</body>
+</html>

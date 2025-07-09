@@ -113,21 +113,6 @@ h2 {
     font-size: 40px;
 }
 
-.hamburger {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    padding: 10px;
-    background-color: rgb(221, 220, 220);
-}
-
-#nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-
 @media (min-width: 1550px) {
 
     .ueberkategorie {
@@ -206,30 +191,7 @@ h2 {
         h2 {
             margin-bottom: 20px;
         }
-
-        .hamburger {
-            display: block;
-        }
-    
-        nav {
-            height: auto;
-        }
-    
-        #nav-links {
-            background-color: rgb(221, 220, 220);
-            border-top: solid 1px black;
-            padding: 10px;
-        }
-    
-        #nav-links li {
-            margin-bottom: 10px;
-        }
-    
-        #nav-links ul {
-            margin-bottom: 15px;
-        }
     
 }
-
 
 

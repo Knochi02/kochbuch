@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Butter Chicken</title>
+    <link rel="stylesheet" type="text/css" href="../einzelrezepte.css">
+    <meta charset="utf-8" lang="de" name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../rezepte.js" defer></script>
+</head>
+<body>
+    <header><h1>Butter Chicken</h1></header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Zurück</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="flexbox a">
+            <img src="../bilder/butter-chicken.jpg">
+            <div class="portionen">
+                <form>
+                    <label for="portionen">Portionen:</label>
+                    <input type="number" id="portionen" name="portionen" min="1" max="10" value="4">
+                    <input type="submit" value="Berechnen">
+                </form>
+                <div class="zutaten">
+                    <h3>Zutaten:</h3>
+                    <div class="flexbox b">
+                        <ul class="flexitem c">
+                            <li>1</li>
+                            <li>1</li>
+                            <li><span data-count>6</span></li>
+                            <li><span data-count>3</span></li>
+                            <li><span data-count>1</span></li>
+                            <li><span data-count>1</span></li>
+                            <li><span data-count>2</span> Zehen</li>
+                            <li><span data-count>2</span> Tl gehackt</li>
+                            <li><span data-weight>40</span> g</li>
+                            <li><span data-count>1</span> Dosen</li>
+                            <li><span data-weight>100</span> g</li>
+                            <li><span data-volume>50</span> ml</li>
+                            <li><span data-volume>500</span> ml</li>
+                            <li><span data-count>1</span> Tl</li>
+                            <li>etwas</li>
+                            <li><span data-count>1</span> Tl</li>
+                            <li><span data-count>3</span> Tl</li>
+                            <li><span data-count>1</span> Tl</li>
+                        </ul>    
+                        <ul class="flexitem d">
+                            <li>Zimtstange</li>
+                            <li>grüne Chili</li>
+                            <li>Kardamomkapseln</li>
+                            <li>Nelken</li>
+                            <li>Lorbeerblatt</li>
+                            <li>Zwiebeln</li>
+                            <li>Knoblauch</li>
+                            <li>Ingwer</li>
+                            <li>Cashewnüsse</li>
+                            <li>Stückige Tomaten</li>
+                            <li>Butter</li>
+                            <li>Sahne</li>
+                            <li>Wasser</li>
+                            <li>Zucker</li>
+                            <li>Salz</li>
+                            <li>Garam Masala</li>
+                            <li>Chilipulver</li>
+                            <li>Bockshornklee gemahlen</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="kochmodus-container">
+                <span>Kochmodus:</span>
+                <div id="kochmodusToggle" class="kochmodus-toggle" onclick="toggleKochmodus()">
+                    <div class="toggle-indicator"></div>
+                </div>
+            </div>
+        </div>
+        <div class="zubereitung">
+            <h3>Zubereitung:</h3>
+            <ol>
+                <li>Eine Pfanne auf mittlerer bis hoher Hitze erhitzen.</li>
+                <li><strong><span data-count>6 </span>Kardamomkapseln</strong> andrücken und zusammen mit <strong><span data-count>1</span> grüne Chili</strong>, <strong><span data-count>1</span> Zimtstange</strong> und <strong><span data-count>3</span> Nelken</strong> für <strong>3–4 Minuten</strong> rösten.</li>
+                <li><strong><span data-weight>50</span> g Butter</strong> und <strong><span data-count>1</span> Lorbeerblatt</strong> hinzufügen und weitere <strong>2 Minuten</strong> rösten.</li>
+                <li>In der Zwischenzeit <strong><span data-count>1</span> Zwiebel</strong> würfeln. Aus <strong><span data-count>2</span> Knoblauchzehen</strong> und <strong>Ingwer</strong> eine Paste herstellen – entweder mit der Reibe oder der breiten Seite eines Messers zerdrücken.</li>
+                <li>Die Gewürze aus der Butter entfernen. Nun die <strong>Zwiebel</strong> und die <strong>Knoblauch-Ingwer-Paste</strong> bei mittlerer Hitze in der Butter anschwitzen.</li>
+                <li>Mit <strong><span data-count>1</span> Dosen stückigen Tomaten</strong> ablöschen. Die Dosen zur Hälfte mit Wasser füllen, ausschwenken und ebenfalls in die Pfanne geben.</li>
+                <li>Alles für <strong>5–10 Minuten</strong> köcheln lassen.</li>
+                <li><strong><span data-weight>40</span> g Cashewnüsse</strong>, <strong><span data-count>3</span> TL Chilipulver</strong> und <strong><span data-count>1</span> TL Zucker</strong> hinzufügen. Die Sauce so lange einkochen lassen, bis sie am Boden leicht ansetzt.</li>
+                <li>Wenn die Sauce stark reduziert ist, <strong><span data-volume>500</span> ml Wasser</strong> hinzufügen, einmal aufkochen und im Mixer fein pürieren.</li>
+                <li>Die Sauce durch ein feines Sieb streichen.</li>
+                <li>Mit <strong><span data-count>1</span> TL Garam Masala</strong>, <strong><span data-count>1</span> TL gemahlenem Bockshornklee</strong>, <strong>Salz</strong> und <strong>Butter</strong> abschmecken.</li>
+                <li>Zum Schluss mit <strong><span data-volume>50</span> ml Sahne</strong> verfeinern und warm servieren.</li>
+            </ol>
+        </div>
+    </main>
+</body>
+</html>
+
